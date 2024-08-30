@@ -12,6 +12,7 @@ void tileTheFloor()
     repeat(19) {
         droppingBeepers();
     }
+    dropBeeper();
     
     
 }
@@ -23,15 +24,4 @@ void droppingBeepers()
         moveForward();
     }
     turnLeft();
-    while (beeperAhead() || !frontIsClear())
-    {
-        if(beeperAhead() && !frontIsClear())
-        {
-            
-        }
-        else {
-            
-        }
-        turnLeft();
-    }
 }
